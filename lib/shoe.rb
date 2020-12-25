@@ -5,9 +5,7 @@ class Shoe
   BRANDS = [ ]
   def initialize(brand)
     @brand = brand
-    BRANDS.each do |unique|
-      if 
-    BRANDS << brand
+    BRANDS.push(brand) unless BRANDS.include?(brand)
   end
 
   def cobble
